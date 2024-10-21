@@ -10,6 +10,7 @@ import zoroImage from './assets/zoro.png';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <h1>All about Props</h1>
     <h1 >The Straw Hats</h1>
     <div className="container">
       <Profile 
