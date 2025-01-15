@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9; /* Light grey background */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title Styles */
+.Title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark grey */
+  text-align: center;
+  margin-bottom: 20px; /* Space between title and board */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Adds spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+.status {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333; /* Dark grey */
+  text-align: center;
+  margin-bottom: 20px; /* Space between title and board */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Adds spacing between letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Board Styles */
+.Board {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px; /* Spacing between rows */
+  background-color: #ffffff; /* White background */
+  border: 5px solid #333; /* Black border for the board */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  justify-content: center;
+}
+
+.board-row {
+  display: flex;
+  gap: 10px; /* Spacing between squares in each row */
+}
+
+/* Square Styles */
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0; /* Light grey for square background */
+  border: 2px solid #666; /* Darker grey border */
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px; /* Vertically center the text */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Square Hover and Active States */
+.square:hover {
+  background-color: #d1d1d1; /* Slightly darker grey on hover */
+}
+
+.square:active {
+  background-color: #c1c1c1; /* Even darker grey when clicked */
+  transform: scale(0.95); /* Shrink slightly on click */
+}
